@@ -7,9 +7,16 @@ const heading = React.createElement('h1', {id: "heading"}, "Hello World from Rea
 
 //React Functional Component
 // Functional component is a javascript function which returns a react element.
+// Component Composition - means compositing 2 component one another
+
+const Title = () => (
+    <h1 className="heading">Title Component</h1>
+)
 
 const HeadingComponent = () => {
-    return <h1 className="heading">Hello world from React Functional Component</h1>
+    return <div className="container">
+        <Title />
+        <p>Hello world from React Functional Component</p></div>
     };
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<HeadingComponent />);
