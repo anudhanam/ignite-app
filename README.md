@@ -1,3 +1,8 @@
+# React Functional Component
+- Must start with Capital letter
+- 
+
+# *********************** 2 ******************* #
 # Using npm
 - npm init 
 - initialise npm
